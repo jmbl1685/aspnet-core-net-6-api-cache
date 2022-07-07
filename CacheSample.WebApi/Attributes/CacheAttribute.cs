@@ -10,7 +10,7 @@ namespace CacheSample.WebApi.Attributes
     [AttributeUsage(AttributeTargets.All)]
     public class CacheAttribute : Attribute, IActionFilter
     {
-        const string cacheIndx = "cache-sample:";
+        const string cachePrefix = "cache-sample:";
 
         private ICacheProvider? cacheProvider = null;
 
@@ -22,6 +22,7 @@ namespace CacheSample.WebApi.Attributes
         /// </summary>
         /// <param name="Status">If the status is TRUE the cache is enable, otherwise will be disable.</param>
         /// <param name="Duration">Expiry time/duration of the data. Duration time: Minutes</param>
+        /// <param name="Provider">Add the name of your DB Provider. Sample: Redis, Memory, SQL Server, etc</param>
         public CacheAttribute(bool Status = true, int Duration = 0, string Provider = "Redis")
         {
             status = Status;
@@ -50,7 +51,7 @@ namespace CacheSample.WebApi.Attributes
             {
                 try
                 {
-                    var key = $"{cacheIndx}:{path}_{method}";
+                    var key = $"{cachePrefix}:{path}_{method}";
                     var okResult = currentResponse as dynamic;
                     var data = okResult?.Value;
 
@@ -74,7 +75,7 @@ namespace CacheSample.WebApi.Attributes
                 {
                     var path = context.HttpContext.Request.Path;
                     var method = context.HttpContext.Request.Method;
-                    var key = $"{cacheIndx}:{path}_{method}";
+                    var key = $"{cachePrefix}:{path}_{method}";
 
                     context.HttpContext.Items["CacheStatus"] = status;
 
