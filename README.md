@@ -7,3 +7,13 @@
 ![image](https://user-images.githubusercontent.com/22874642/177662439-8d442cab-f901-4bac-91b9-b97533cc52db.png)
 
 You can add your custom DB Provider (MongoDB, SQL Server, PostgreSQL, etc) and adapt it as necessary
+
+## Screenshots:
+![image](https://user-images.githubusercontent.com/22874642/177671596-38090778-d838-47ab-b077-1f5117640efe.png)
+
+![image](https://user-images.githubusercontent.com/22874642/177671712-501aca4b-b54c-4a22-8050-61c9ffe182de.png)
+
+## Result:
+
+![image](https://user-images.githubusercontent.com/22874642/177673086-e14a003b-7a99-47f0-bb29-4ff493f81617.png)
+
