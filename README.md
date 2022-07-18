@@ -23,5 +23,4 @@ Go to the file "appsettings.json" (aspnet-core-net-6-api-cache/CacheSample.WebAp
     "ConnectionString": "your_host:your_port,password=your_password"
   }
 }
-
 ```
