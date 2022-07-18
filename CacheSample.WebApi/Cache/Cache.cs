@@ -4,14 +4,8 @@ namespace CacheSample.WebApi.Cache
 {
     public static class CacheSelector
     {
-        public static Redis GetRedis()
-        {
-            return new Redis();
-        }
+        public static Redis GetRedis() => new Redis();
 
-        public static Memory GetMemory()
-        {
-            return new Memory();
-        }
+        public static Memory GetMemory() => new Memory();
     }
 }
