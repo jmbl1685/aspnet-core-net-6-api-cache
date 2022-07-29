@@ -59,3 +59,15 @@ Go to the file "appsettings.json" (aspnet-core-net-6-api-cache/CacheSample.WebAp
   }
 }
 ```
+
+## Screenshots:
+![image](https://user-images.githubusercontent.com/22874642/177671596-38090778-d838-47ab-b077-1f5117640efe.png)
+
+![image](https://user-images.githubusercontent.com/22874642/177671712-501aca4b-b54c-4a22-8050-61c9ffe182de.png)
+
+## Result:
+
+![image](https://user-images.githubusercontent.com/22874642/177673086-e14a003b-7a99-47f0-bb29-4ff493f81617.png)
+
+
+
